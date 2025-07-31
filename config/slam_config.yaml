@@ -1,0 +1,39 @@
+stereo_slam:
+  ros__parameters:
+    # camera parameters
+    baseline: 0.12 # stereo baseline in meters
+    focal_length: 718.856 # focal length in pixels
+    cx: 607.1928  # principal point x
+    cy: 185.2157 # principal point y
+    
+    # feature detection
+    max_features: 1000
+    orb_scale_factor: 1.2
+    orb_n_levels: 8
+    
+    # matching parameters
+    match_ratio_threshold: 0.7
+    min_matches: 20
+    
+    # motion estimation
+    ransac_threshold: 1.0
+    ransac_confidence: 0.99
+    
+    # mapping parameters
+    keyframe_distance_threshold: 0.3 #meters
+    keyframe_angle_threshold: 0.1 #radians
+    max_keyframes: 50
+    
+    # point cloud parameters
+    min_depth: 0.1  #meters
+    max_depth: 10.0 #meters
+    voxel_size: 0.05 #meters
+    
+    # publishing rates
+    pose_rate: 30 #Hz    
+    map_rate: 1 #Hz      
+    
+    # frame IDs
+    map_frame: "map"
+    camera_frame: "camera_link"
+    base_frame: "base_link"

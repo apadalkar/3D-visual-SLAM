@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>stereo_slam_pkg</name>
+  <version>1.0.0</version>
+  <description>Stereo Visual SLAM Package for ROS 2</description>
+  <maintainer email="apadalkar@berkeley.edu">Anit Padalkar</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>open3d</exec_depend>
+  <exec_depend>numpy</exec_depend>
+  <exec_depend>matplotlib</exec_depend>
+  <exec_depend>rosbag2_py</exec_depend>
+  <exec_depend>loguru</exec_depend>
+  <exec_depend>tqdm</exec_depend>
+  <exec_depend>pyyaml</exec_depend>
+  <exec_depend>requests</exec_depend>
+  <exec_depend>opencv-python</exec_depend>
+  <exec_depend>pybind11</exec_depend>
+  <test_depend>pytest</test_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
